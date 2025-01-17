@@ -1,0 +1,165 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[sfdefault]{source code pro} % Source Code Pro font
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Header Formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{MidnightBlue}
+}{}{0em}{}[\color{MidnightBlue}\titlerule \vspace{-5pt}]
+
+% Ensure ATS-friendly PDF
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ismael L. Sai} \\ \vspace{1pt}
+    (+1) 226-246-1348 \, $|$ \underline{\href{mailto:sai.ismael@outlook.com}{sai.ismael@outlook.com}} \, $|$ \underline{\href{https://linkedin.com/in/saiismael}{linkedin.com/in/saiismael}} \, $|$ \underline{\href{https://github.com/saiismael}{github.com/saiismael}} \, $|$ Canada
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+    \small{
+   Versatile Software Engineer with 5+ years of experience in front end development, AI model evaluation, and full-stack web solutions. A proven track record in improving application performance, reducing errors, and driving user engagement through innovative technological solutions.
+    }
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AI Coding Consultant \& Model Evaluator}{October 2024 -- present}
+      {Outlier.ai - Freelance}{Windsor, ON, Canada}
+    \resumeItemListStart
+        \resumeItem{Elevated LLM code accuracy by 15\% through systematic evaluation of 1000+ responses.}
+        \resumeItem{Engineered 200+ programming prompts, expanding model training scenarios by 10\%.}
+        \resumeItem{Developed comprehensive testing frameworks for 500+ code samples to benchmark model outputs against industry coding standards.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Freelance Software Engineer}{June 2024 -- August 2024}
+      {Confidential Client - Freelance}{Windsor, ON, Canada}
+    \resumeItemListStart
+        \resumeItem{Designed a Client Management Dashboard using ReactJS, Tailwind CSS and Firebase, improving task efficiency by 30\%.}
+        \resumeItem{Deployed secure login and real-time data updates via Firebase, boosting data accessibility by 25\%.}
+        \resumeItem{Automated appointment notifications with Firebase Functions, enhancing client retention by 20\%.}    
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer}{June 2022 -- January 2024}
+      {Capgemini FS - Permanent}{Perols, Occitanie, France}
+    \resumeItemListStart
+        \resumeItem{Enhanced BPCE’s banking app user interface with Angular, reducing bug reports by 40\% post-launch.}
+        \resumeItem{Delivered design-compliant features, increasing interaction metrics by 25\%.}
+        \resumeItem{Optimized DOM loading strategies, decreasing page load times by 20\% and improving user experience.}
+        \resumeItem{Led technical workshops for 5+ team members, improving workflow efficiency and collaboration by 30\%.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+      \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Web Developer (R\&D)}{February 2021 -- July 2021}
+      {Berger-Levrault - Intern}{Labege, Occitanie, France}
+    \resumeItemListStart
+        \resumeItem{Modernized an internal web app using Angular, Node.js, Neo4J and Elasticsearch.}
+        \resumeItem{Streamlined CI/CD pipelines with Docker, accelerating deployment cycles.}
+        \resumeItem{Integrated modular microservices, enabling faster feature releases and improving system reliability by 20\%.}
+        \resumeItem{Developed a research paper synchronization feature, reducing administrative workload by 30\%.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+      \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Web Developer}{December 2016 -- January 2020}
+      {STSAI Novarix - Permanent}{Castelnau-le-Lez, Occitanie, France}
+    \resumeItemListStart
+        \resumeItem{Launched a company website, increasing B2B inquiries by 10\% and driving sales growth by 20\%.}
+        \resumeItem{Implemented a database solution to track inventory, enhancing stock accuracy and minimizing errors by 15\%.}
+        \resumeItem{Collaborated with sales teams to refine workflows, improving client satisfaction rates by 25\%.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\small{
+\begin{tabularx}{\textwidth} {X X}
+\textbf{Languages:} Java, JavaScript, TypeScript, PHP, C, C++ & \textbf{DBMS:} MongoDB, MySQL \\
+\textbf{Frameworks:} Angular, ReactJS, Symfony, Node.js & \textbf{Tools:} Docker, Git, CI/CD \\
+\textbf{Engineering:} OOP, Agile, Design Patterns & \textbf{Soft Skills:} Problem-solving, Teamwork \\
+\end{tabularx}
+}
+
+%-----------PROJECTS-----------
+%\section{Project}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Montpellier}{Montpellier, France}
+      {Master of Science in Computer Science and Software Engineering}{September 2019 - July 2021}
+      \resumeItemListStart
+      \resumeItem{\textbf{Relevant Courses:} Machine Learning, Software Architecture, Advanced Web Development, Project Management, Information Systems and Databases, Propositional Logic
+Systems}
+    \resumeItemListEnd
+    \resumeSubheading
+      {University of Montpellier}{Montpellier, France}
+      {Bachelor of Science in Computer Science}{Sept. 2014 -- Jul 2019}
+      \resumeItemListStart
+      \resumeItem{\textbf{Relevant Courses:} Advanced Algorithmic, OOP, Network programing, Programming in C, Event-driven and Web Programming, Computer Architecture and Assembly Language}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
